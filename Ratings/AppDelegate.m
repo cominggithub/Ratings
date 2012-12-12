@@ -7,12 +7,52 @@
 //
 
 #import "AppDelegate.h"
+#import "Player.h"
+#import "PlayerViewController.h"
 
 @implementation AppDelegate
+{
+    NSMutableArray *players;
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    int i;
+    int count = 500;
     // Override point for customization after application launch.
+    players = [NSMutableArray arrayWithCapacity:count];
+    
+    for(i=0; i<count; i+=3)
+    {
+        Player *player = [[Player alloc] init];
+        player.name = @"李大仁";
+        player.game = @"我可能不會愛你";
+        player.rating = 4;
+        [players addObject:player];
+    
+        player = [[Player alloc] init];
+        player.name = @"伍佰";
+        player.game = @"真世界";
+        player.rating = 5;
+        [players addObject:player];
+    
+        player = [[Player alloc] init];
+        player.name = @"吳念真";
+        player.game = @"多桑";
+        player.rating = 3;
+        [players addObject:player];
+    }
+    UITabBarController *tabBarController = (UITabBarController*) self.window.rootViewController;
+    
+    UINavigationController *navigationController =
+    [[tabBarController viewControllers] objectAtIndex:3];
+    
+    PlayerViewController *playerViewController =
+    [[navigationController viewControllers] objectAtIndex:0];
+    
+    playerViewController.players = players;
+    
     return YES;
 }
 							
@@ -42,5 +82,7 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
 
 @end
