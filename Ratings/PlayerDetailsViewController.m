@@ -20,13 +20,14 @@
 
 -(IBAction) cancel:(id)sender
 {
-
+    linmspl();
     [self.delegate playerDetailsViewControllerDidCancel:self];
 }
 
 -(IBAction) done:(id)sender
 {
     
+    linmspl();
     Player *player  = [[Player alloc] init];
     player.name     = self.nameTextField.text;
     player.game     = @"天天開心";

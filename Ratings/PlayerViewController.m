@@ -6,11 +6,13 @@
 //  Copyright (c) 2012年 Coming. All rights reserved.
 //
 
+
 #import "linmsdebug.h"
 #import "PlayerViewController.h"
 #import "PlayerDetailsViewController.h"
 #import "Player.h"
 #import "PlayerCell.h"
+#include <stdlib.h>
 
 @interface PlayerViewController ()
 
@@ -55,6 +57,8 @@
     
     appleImage = [UIImage imageNamed:@"Apple logo icon - Aluminum 3232.png"];
     [headImages addObject:headImage];
+    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -98,9 +102,14 @@
     {
         cell.headImageView.image = [headImages objectAtIndex:1];
     }
-    else
+    else if([player.name isEqualToString:@"吳念真"])
     {
         cell.headImageView.image = [headImages objectAtIndex:2];
+    }
+    else
+    {
+        int r = arc4random() % 3;
+        cell.headImageView.image = [headImages objectAtIndex:r];
     }
     
     for(i = 1; i<= 5; i++)
@@ -194,20 +203,22 @@
 -(void) playerDetailsViewControllerDidCancel: (PlayerDetailsViewController*) controller
 {
 
-
+    linmspl();
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 
 -(void) playerDetailsViewController: (PlayerDetailsViewController*) controller didAddPlayer:(Player*) player
 {
-    
+    linmspl();
     [self.players addObject:player];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:[self.players count] - 1 inSection:0];
     [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
                           withRowAnimation:UITableViewRowAnimationAutomatic];
     
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+
     
 }
 

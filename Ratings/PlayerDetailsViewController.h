@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Player.h"
+#import "linmsdebug.h"
 
 @class PlayerDetailsViewController;
 @protocol PlayerDetailsViewControllerDelegate <NSObject>

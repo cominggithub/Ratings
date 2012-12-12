@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     int i;
-    int count = 500;
+    int count = 3;
     // Override point for customization after application launch.
     players = [NSMutableArray arrayWithCapacity:count];
     
@@ -46,12 +46,16 @@
     UITabBarController *tabBarController = (UITabBarController*) self.window.rootViewController;
     
     UINavigationController *navigationController =
-    [[tabBarController viewControllers] objectAtIndex:3];
-    
+    [[tabBarController viewControllers] objectAtIndex:0];
+   
     PlayerViewController *playerViewController =
     [[navigationController viewControllers] objectAtIndex:0];
-    
+   
     playerViewController.players = players;
+    
+    NSLog(@"Start\n");
+    [NSThread sleepForTimeInterval:2];
+    NSLog(@"End\n");
     
     return YES;
 }
