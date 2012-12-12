@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2C3BE11678B43600F2D084 /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2C3BE01678B43600F2D084 /* PlayerDetailsViewController.m */; };
 		2B9246041674D89B00BA4118 /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9246031674D89B00BA4118 /* CustomSegue.m */; };
 		2BA41804167449AC0054CA5B /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA41803167449AC0054CA5B /* PlayerCell.m */; };
-		2BA4180B167489F20054CA5B /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA4180A167489F20054CA5B /* PlayerDetailsViewController.m */; };
 		2BAAFFA7166F825C00401E38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BAAFFA6166F825C00401E38 /* UIKit.framework */; };
 		2BAAFFA9166F825C00401E38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BAAFFA8166F825C00401E38 /* Foundation.framework */; };
 		2BAAFFAB166F825C00401E38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BAAFFAA166F825C00401E38 /* CoreGraphics.framework */; };
@@ -47,13 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B2C3BDF1678B43600F2D084 /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
+		2B2C3BE01678B43600F2D084 /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
 		2B9246001674CEFF00BA4118 /* linmsdebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linmsdebug.h; sourceTree = "<group>"; };
 		2B9246021674D89B00BA4118 /* CustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegue.h; sourceTree = "<group>"; };
 		2B9246031674D89B00BA4118 /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegue.m; sourceTree = "<group>"; };
 		2BA41802167449AC0054CA5B /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
 		2BA41803167449AC0054CA5B /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
-		2BA41809167489F20054CA5B /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerDetailsViewController.h; path = ../PlayerDetailsViewController.h; sourceTree = "<group>"; };
-		2BA4180A167489F20054CA5B /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayerDetailsViewController.m; path = ../PlayerDetailsViewController.m; sourceTree = "<group>"; };
 		2BAAFFA2166F825C00401E38 /* Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAAFFA6166F825C00401E38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2BAAFFA8166F825C00401E38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -145,6 +145,8 @@
 		2BAAFFAC166F825C00401E38 /* Ratings */ = {
 			isa = PBXGroup;
 			children = (
+				2B2C3BDF1678B43600F2D084 /* PlayerDetailsViewController.h */,
+				2B2C3BE01678B43600F2D084 /* PlayerDetailsViewController.m */,
 				2BAAFFB5166F825C00401E38 /* AppDelegate.h */,
 				2BAAFFB6166F825C00401E38 /* AppDelegate.m */,
 				2BAAFFC1166F825C00401E38 /* MainStoryboard_iPad.storyboard */,
@@ -153,8 +155,6 @@
 				2BAAFFE8166F957A00401E38 /* Player.m */,
 				2BA41802167449AC0054CA5B /* PlayerCell.h */,
 				2BA41803167449AC0054CA5B /* PlayerCell.m */,
-				2BA41809167489F20054CA5B /* PlayerDetailsViewController.h */,
-				2BA4180A167489F20054CA5B /* PlayerDetailsViewController.m */,
 				2BAAFFE4166F90C000401E38 /* PlayerViewController.h */,
 				2BAAFFE5166F90C000401E38 /* PlayerViewController.m */,
 				2BAAFFAD166F825C00401E38 /* Supporting Files */,
@@ -327,8 +327,8 @@
 				2BAAFFE6166F90C000401E38 /* PlayerViewController.m in Sources */,
 				2BAAFFE9166F957A00401E38 /* Player.m in Sources */,
 				2BA41804167449AC0054CA5B /* PlayerCell.m in Sources */,
-				2BA4180B167489F20054CA5B /* PlayerDetailsViewController.m in Sources */,
 				2B9246041674D89B00BA4118 /* CustomSegue.m in Sources */,
+				2B2C3BE11678B43600F2D084 /* PlayerDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
